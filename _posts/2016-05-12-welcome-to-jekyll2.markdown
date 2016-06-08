@@ -14,8 +14,7 @@ categories: jekyll update
 
 ![회의사진1](https://www.dropbox.com/s/jrx2i2vvlhwie39/%ED%9A%8C%EC%9D%98%EC%82%AC%EC%A7%841.jpg?dl=0)
 ![회의사진2](https://www.dropbox.com/s/2u9dveu0z9vrkdm/%ED%9A%8C%EC%9D%98%EC%82%AC%EC%A7%842.jpg?dl=0)
-[회의사진1](https://www.dropbox.com/s/jrx2i2vvlhwie39/%ED%9A%8C%EC%9D%98%EC%82%AC%EC%A7%841.jpg?dl=0)
-[회의사진2](https://www.dropbox.com/s/2u9dveu0z9vrkdm/%ED%9A%8C%EC%9D%98%EC%82%AC%EC%A7%842.jpg?dl=0)
+
 
 [jekyll-docs]: http://jekyllrb.com/docs/home
 
