@@ -2,7 +2,8 @@
 
 layout: post
 
-title:  "컴퓨터시스템기초설계 과제3(팀 회의, 회의 사진 제출)"
+title:  "컴퓨터시스템기초설계 과제3
+(팀 회의, 회의 사진 제출)"
 
 
 categories: jekyll update
