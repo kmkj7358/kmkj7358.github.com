@@ -1,96 +1,132 @@
-p h o t o r a m a 
-====================
+# Yummy Jekyll Theme
 
-![photorama](https://raw.githubusercontent.com/sunbliss/photorama/gh-pages/photorama_thumb.gif)
+A Simple, Bootstrap Based Theme. Especially for developers who like to show their projects on website and like to take notes. There are also some magical features to discover. 
 
+## [Live Demo](http://dongchuan.github.io/)
 
-![Speed Test](https://raw.githubusercontent.com/sunbliss/photorama/gh-pages/Website%20Speed%20Test.png)
+Open issues if you find bugs or even have trouble installing jekyll or dependencies. :D
 
-----------
+Or contact: dongchuan55@gmail.com
 
----> [DEMO](http://sunbliss.github.io/photorama/ "DEMO")  <---
+> Strongly suggest to fork and change project name to create your GitHub Pages instead of downloading it directly. Because in the future, I will develop many funny modules like 'footprint' to show your world wide trip. Could be easier to merge new features in the future.
 
-----------
+## Notable Features
 
-A theme for **jekyll**. 
+* Compatible with Jekyll 3.x and GitHub Pages
+* Based on Bootstrap
+* [Github Module](http://dongchuan.github.io/open-source) to show your popular projects in a single page and on sidebar automatically. (Datas are retreived by github metadata instead of by api calls, so no delay) 
+* [Post Module](http://dongchuan.github.io/blog) to show all your posts with timeline
+* [Bookmark Module](http://dongchuan.github.io/bookmark) to establish a quick mark about all libs/tools/books you like to use.
+* [Post Navigation Module](http://dongchuan.github.io/css/2016/04/22/CSS-Animation.html) to generat a quick directory of your post by titles/subtitles automatically.
+* Support [Disqus Comment](https://disqus.com/home/explore/)
+* Support [Google Analytics](https://analytics.google.com/analytics/web/)
 
-Created for gh-pages (project page).
+Features in future:
+* A Footprint module to show all your travel around the world
+* Feature to share. (Facebook, twitter, evernote and so on)
+* (Not sure) A embeded todo list. (Not sure) to travel, to complete, to do for your parents, etc. To do in life!
+* Creative ideas to discuss with you :P
 
-This template was crafted having in mind the photobloggers.
+## Install and setup
 
-It uses [Clean Blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll "Clean Blog") as its basis.
+Before using it, you may need [Bower](http://bower.io/) and [Bundler](http://bundler.io/) on your local to install dependencies.
 
-----------
+1. Fork code and clone
+2. Run `bower install` to install all dependencies in [bower.json](https://github.com/DONGChuan/DONGChuan.github.io/blob/master/bower.json)
+3. Run `bundle install` to install all dependencies in [Gemfile](https://github.com/DONGChuan/DONGChuan.github.io/blob/master/Gemfile)
+4. Update `_config.yml` with your own settings.
+5. Add posts in `/_posts`
+6. Commit to your own Username.github.io repository.
+7. Then come back to star this theme!
 
- **IMPORTANT!!!**
-================
+> When install dependencies by bundler or gem, you may have some errors depending on your environment.
 
-###Before you begin: Change the URL and the BASEURL in the _config.yml
+> Error about `json`. Check response of [Massimo Fazzolari on Stackoverflow](http://stackoverflow.com/questions/8100891/the-json-native-gem-requires-installed-build-tools) to quick fix your problem. (Please also use latest version instead of 1.9.3 mentioned in the response)
+  
+> Error about `jekyll-paginate`. Please check [here](http://stackoverflow.com/questions/35401566/dont-have-jekyll-paginate-or-one-of-its-dependencies-installed)
 
-The **URL** should say `http://yourusername.github.io`
+> Error about `SSL_connect`. Please check [here](http://stackoverflow.com/questions/15305350/gem-install-fails-with-openssl-failure) and [here](http://railsapps.github.io/openssl-certificate-verify-failed.html)
 
-The **BASEURL** should say `/repositoryname`
+> For the moment, when you test on your local, you need to keep internet connection. Bug will be fixed soon.
 
-If there are problems with loading assets like CSS files and images, make sure that both **URL** and **BASEURL** are set correctly!!! 
+## How to use
 
-----------
+#### Create a new post
 
-If you want to use your **own domain** go to the root of your project's repository, create a CNAME file and add a line with your domain name, e.g. `www.yourdomain.com`.
+Create a `.md` file inside `_posts` folder.
 
-Go to your domain name registrar and add a CNAME record pointing your domain to GitHub Pages:
-- type: CNAME
-- host: www.yourdomainname.com
-- answer: yourusername.github.io/repositoryname
-- TTL: 300
+Name the file according to the standard jekyll format.
 
-----------
+```
+2016-01-19-i-love-yummy.md
+```
 
-Usage
-============ 
+Write the Front Matter and content in the file.
 
-###Quick Start
+```
+---
+layout: post
+title: Post title
+category: Category
+tags: [tag1, tag2]
+---
+```
 
-1. [Fork this repository](https://github.com/sunbliss/photorama/fork) to get started. 
-2. Go to `https://github.com/yourusername/photorama/settings`
-3. Rename the repository to your new project, e.g. *myphotoblog*
-2. Create a new branch called `gh-pages` in your repository. 
-3. Go to the branches directory at `https://github.com/yourusername/repositoryname/branches` and *change* **default branch** to **gh-pages**.
-4. Delete **master** branch. 
-3. GitHub will build your site automatically and publish it at `http://yourusername.github.io/repositoryname/`.  
+Please find examples [here](https://github.com/DONGChuan/DONGChuan.github.io/tree/master/_posts)
 
-----------
+#### [Post Navigation Module](http://dongchuan.github.io/css/2016/04/22/CSS-Animation.html)
 
-- The homepage welcomes the visitors with 3 animated photos of your choice. It is recommended that all three are landscape orientated for best view.
+When writing post, please always follow this format:
 
-To change the welcome content at the far left of the Home page go here: `/index.html`
+```
+Description about this post, blablabla
 
-----------
+## Title A
 
-- To enable **disqus** comments in the posts, change their front matter for comments to 'true'.
+### Title A-1
 
-You must have a registered account in disqus, where you will also register a forum for your website.
+### Title A-2
 
-Find the line `s.src = '//yourproject.disqus.com/embed.js';  // ` in the disqus_comments.html and REPLACE 'yourproject' with your forum shortname.
+## Title B
 
-----------
+### Title B-1
 
-- In order to send **newsletters** about your posts to your subscribers, you should register an account in [tinyletter](http://www.tinyletter.com " tinyletter").
+```
 
-Find the line `'https://tinyletter.com/yourproject', ` in the *newsletter.html* and replace 'yourproject' with your registered website.
+So, Title A, A-1, A-2, Title B, B-1 will be detected and created as a directory
 
-You can always ommit the newsletter rendering by deleting the line `{% include newsletter.html %}
-` in the *default.html* layout.
+For example, [a demo post](https://github.com/DONGChuan/DONGChuan.github.io/edit/master/_posts/2016-04-22-CSS-Animation.md)
 
-----------
+#### [Github Module](http://dongchuan.github.io/open-source)
 
-If you want to use the matching **NEWSLETTER** template, you must always create a new file  by copying its respective index.html and renaming it to e.g. 2016-March-newsletter.html and then save it inside the folder and the accompanying images inside the 'images folder', so it can be accessed to your viewers through their browser. In this case the root url for the above newsletter will be ***http://yourgithubusername.github.io/yourproject/2016-March-newsletter.html***. Copy this link and replace this part of the code `http://www.yoursite.com/newsletter/year-month-newsletter` with it.
+This module will get automatically all your repository information from github. But to test on your local, you must keep internet connection. 
+In the future, it will also show the repositories you contributed a lot and the ones of your organization.
 
-----------
+#### [Bookmark Module](http://dongchuan.github.io/bookmark)
 
-**TAGS** and **CATEGORIES** of the posts 
+To add new marks, you only need to edit [bookmark.md](https://github.com/DONGChuan/Yummy-Jekyll/blob/master/bookmark.md).
 
-When you add a tag or a category name in the front matter of a post, don't forget to add the responding markdown files in /journal/tag/ folder and in /journal/category folder, so they can always render when browsing the journal or searching in the respective page.
+#### [Customize About Page](http://dongchuan.github.io/about)
 
-----------
+Feel free to customize about.me page to show yourself. You only need to modify [about.md](https://github.com/DONGChuan/Yummy-Jekyll/blob/master/about.md) and [about.html](https://github.com/DONGChuan/Yummy-Jekyll/blob/master/_includes/about.html)
 
-I hope you will find it useful for your projects, photographic or not.
+## ToDo
+
+- [ ] List posts by a specified tag
+- [ ] New module FootPrint to show your world around trips
+- [ ] Show projects from your orgnization on github. (Siderbar, in open-source page)
+- [ ] To fix bug - could only test on local with internet connected.
+
+## Contributor
+
+* [DONGChuan](https://github.com/DONGChuan)
+* [Mojtaba Koosej](https://github.com/mkoosej)
+* [shahsaurabh0605](https://github.com/shahsaurabh0605)
+
+## License
+
+The Apache License 2.0
+
+Copyright (c) 2016 DONG Chuan
+
+Check [LICENSE](https://github.com/DONGChuan/DONGChuan.github.io/blob/master/LICENSE) file and [official website](http://www.apache.org/licenses/LICENSE-2.0) for details
